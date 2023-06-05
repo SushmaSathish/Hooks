@@ -11,10 +11,10 @@ if(storeusedInformation==="1")
 setIsLoggedIn(true)
 },[]);
   
-  const loginHandler = (email, password) => {
+  const loginHandler = (email, password, clgname) => {
     // We should of course check email and password
     // But it's just a dummy/ demo anyways
-    localStorage.setItem("isLoggedIn","1")
+    localStorage.setItem("isLoggedIn","1", "clgName")
     setIsLoggedIn(true);
   };
 
